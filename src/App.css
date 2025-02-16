@@ -10,6 +10,12 @@
   font-family: 'Arial', sans-serif; /* Clean, modern font */
 }
 
+.anker{
+  background: #C1DBF2;
+  border-radius: 30px 3px;
+  color: black;
+}
+
 #tsparticles {
   pointer-events: none;
 }
