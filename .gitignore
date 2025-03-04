@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/public/index.html
 
 # testing
 /coverage
@@ -25,4 +26,5 @@ yarn-debug.log*
 yarn-error.log*
 *.css
 src/**/*.css
+# Ignore all CSS files in the project
 **/*.css
