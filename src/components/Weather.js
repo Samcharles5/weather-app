@@ -9,7 +9,7 @@ function Weather() {
     country: "",
   });
 
-  const APIKEY = "7b1104f44ec974da21aeaf5617174bbc";
+  const API_KEY = process.env.REACT_APP_API_KEY;
   
   async function weatherData(e) {
     e.preventDefault();
@@ -17,7 +17,7 @@ function Weather() {
       alert("Add values");
     } else {
       const data = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&APPID=${APIKEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&APPID=${API_KEY}`
       )
         .then((res) => res.json())
         .then((data) => data);
